@@ -1,6 +1,7 @@
 import React from 'react';
 import {Home} from "./components/home.js"
 import {About} from "./components/about.js"
+import {Error} from "./components/404.js"
 import {Routes,Route} from 'react-router'
 import { Link } from 'react-router-dom';
 
@@ -17,6 +18,7 @@ function App() {
 
 <Route path="/" element={<Home/>}/>
 <Route path="/about" element={<About/>}/>
+<Route path="*" element={<Error/>}/>
 </Routes>
 
     </div>
