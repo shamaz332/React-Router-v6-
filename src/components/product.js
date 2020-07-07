@@ -1,12 +1,16 @@
 import React from 'react'
-import {useParams} from 'react-router-dom'
+import {Outlet} from 'react-router-dom'
 export const Product = () => {
 
-const {productID} = useParams();
 
     return (
         <div>
-            helo from product {productID}
+           Product description
+           <hr/>
+           <div>
+           <Outlet></Outlet>
+           
+           </div>
         </div>
     )
 }
